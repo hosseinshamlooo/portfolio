@@ -22,7 +22,3 @@ This project is designed to showcase skills, projects, and experience in a **mod
 - 🧩 **Reusable Components** – Built with Aceternity UI + Tailwind utilities
 - 🚀 **Fast & Lightweight** – Minimal dependencies, optimized build
 - 🌐 **Easy Deployment** – Works seamlessly with Vercel, Netlify, or GitHub Pages
-
----
-
-## 📂 Project Structure

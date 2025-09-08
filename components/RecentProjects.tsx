@@ -5,7 +5,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20" id="projects">
+    <div className="mt-30" id="projects">
       <h1 className="heading mb-46">
         A small selection of {""}
         <span className="text-purple">recent projects</span>
@@ -21,7 +21,11 @@ const RecentProjects = () => {
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D] ">
                   <img src="/bg.png" alt="bg-img" />
                 </div>
-                <img src={img} alt={title} className="z-10 absolute bottom-0" />
+                <img
+                  src={img}
+                  alt={title}
+                  className="z-10 absolute bottom-0 left-0 right-0 w-full h-full object-cover rounded-lg"
+                />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}
@@ -46,7 +50,7 @@ const RecentProjects = () => {
 
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                    Check Repo
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>

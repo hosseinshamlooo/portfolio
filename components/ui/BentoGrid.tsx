@@ -161,7 +161,7 @@ export const BentoGridItem = ({
                 title={copied ? "Email Copied!" : "Copy my Email"}
                 icon={<IoCopyOutline />}
                 position="left"
-                otherCLasses="!bg-[#161a31]"
+                otherClasses="!bg-[#161a31]"
                 handleClick={handleCopy}
               />
             </div>

@@ -34,11 +34,14 @@ export const TextGenerateEffect = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
+          // Check if this word should be purple (only "occasionally")
+          const isPurple = word === "occasionally";
+
           return (
             <motion.span
               key={word + idx}
               className={` ${
-                idx > 3 ? "text-purple" : "dark:text-white text-black"
+                isPurple ? "text-purple" : "dark:text-white text-black"
               } opacity-0`}
               style={{
                 filter: filter ? "blur(10px)" : "none",

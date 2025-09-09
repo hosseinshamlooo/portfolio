@@ -19,7 +19,7 @@ const RecentProjects = () => {
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] sm:h-[40vh] h-[30vh] overflow-hidden mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D] ">
-                  <img src="/bg.png" alt="bg-img" />
+                  <img src="./bg.png" alt="bg-img" />
                 </div>
                 <img
                   src={img}

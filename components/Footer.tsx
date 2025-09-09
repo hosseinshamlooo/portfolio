@@ -30,17 +30,21 @@ const Footer = () => {
 
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((profile) => (
-            <div
+            <a
               key={profile.id}
-              className="cursor-pointer w-10 h-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              href={profile.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer w-10 h-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 hover:bg-opacity-100 transition-all duration-300 hover:scale-110"
+              aria-label={`Visit ${profile.name} profile`}
             >
               <img
                 src={profile.img}
-                alt={profile.id.toString()}
+                alt={profile.name}
                 width="20"
                 height="20"
               />
-            </div>
+            </a>
           ))}
         </div>
       </div>

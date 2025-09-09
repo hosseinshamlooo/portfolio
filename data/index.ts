@@ -140,9 +140,13 @@ export const socialMedia = [
   {
     id: 1,
     img: "./git.svg",
+    link: "https://github.com/hosseinshamlooo",
+    name: "GitHub"
   },
   {
     id: 2,
     img: "./link.svg",
+    link: "https://www.linkedin.com/in/hossein-shamloo-a35a75206/",
+    name: "LinkedIn"
   },
 ];

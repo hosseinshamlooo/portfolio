@@ -2,7 +2,7 @@ import {withSentryConfig} from "@sentry/nextjs";
 import type { NextConfig } from "next";
 
 const isProd = process.env.NODE_ENV === 'production';
-const repoName = 'my-portfolio-aug2025';
+const repoName = 'portfolio';
 
 const nextConfig: NextConfig = {
   output: 'export',

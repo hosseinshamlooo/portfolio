@@ -2,7 +2,7 @@
 
 ## Quick Fix for Image Loading Issues
 
-Your images weren't loading because GitHub Pages serves your site from a subdirectory (`/my-portfolio-aug2025/`), but your images were using absolute paths.
+Your images weren't loading because GitHub Pages serves your site from a subdirectory (`/portfolio/`), but your images were using absolute paths.
 
 ## What I Fixed
 
@@ -33,7 +33,7 @@ Your images weren't loading because GitHub Pages serves your site from a subdire
 
 3. **Your site will be available at:**
    ```
-   https://yourusername.github.io/my-portfolio-aug2025/
+   https://yourusername.github.io/portfolio/
    ```
 
 ## Important Notes
@@ -42,12 +42,13 @@ Your images weren't loading because GitHub Pages serves your site from a subdire
 - The `basePath` ensures all routes work correctly on GitHub Pages
 - Images are unoptimized for static export compatibility
 - The build output goes to the `out/` directory as expected by GitHub Actions
+- Repository name is set to `portfolio` to match your GitHub Pages URL
 
 ## Troubleshooting
 
 If images still don't load:
 
-1. Check that your repository name matches the `repoName` in `next.config.ts`
+1. Check that your repository name matches the `repoName` in `next.config.ts` (currently set to `portfolio`)
 2. Ensure all images are in the `public/` folder
 3. Use relative paths or let Next.js handle the paths automatically
 4. Check the GitHub Actions logs for build errors
